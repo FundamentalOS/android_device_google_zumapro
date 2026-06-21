@@ -1,5 +1,8 @@
+type modem_config_file, file_type, vendor_file_type;
+type modem_ml_data_file, data_file_type, file_type;
 type modem_ml_svc_sit, domain;
 type modem_ml_svc_sit_exec, exec_type, file_type, vendor_file_type;
+type modemml_tflite_service, service_manager_type, system_server_service;
 
 hal_client_domain(modem_ml_svc_sit, hal_neuralnetworks)
 
