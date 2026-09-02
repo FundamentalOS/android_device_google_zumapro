@@ -170,4 +170,10 @@
     <!-- Whether to enable APDU sender optimization i.e. a logical channel is opened and
          kept open for multiple APDU commands within one session.-->
     <bool name="euicc_optimize_apdu_sender">true</bool>
+
+    <!-- Keep PS attach allowed on both SIM slots. The Shannon RIL otherwise disables PS
+         service on the slot that is not the preferred data modem and the 2025-09+ modem
+         firmware then cannot attach to LTE/NR on that slot (secondary SIM / roaming eSIM
+         ends up "Emergency calls only"). Pairs with persist.vendor.radio.dual.volte=1. -->
+    <bool name="config_dsds_allow_data_all_slots">true</bool>
 </resources>
