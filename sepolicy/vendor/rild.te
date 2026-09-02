@@ -43,3 +43,6 @@ allow rild radio_vendor_data_file:file create_file_perms;
 allow rild rild_vendor_data_file:dir create_dir_perms;
 allow rild rild_vendor_data_file:file create_file_perms;
 allow rild vendor_fw_file:file r_file_perms;
+
+# Every modem/radio helper reads /proc/sys/vm/overcommit_memory at start; harmless.
+dontaudit rild proc_overcommit_memory:file r_file_perms;
