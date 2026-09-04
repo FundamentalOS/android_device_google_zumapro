@@ -41,5 +41,5 @@
     <bool name="config_enableDisplayCutoutProtection">true</bool>
 
     <!--  Whether to use a machine learning model for back gesture falsing. -->
-    <bool name="config_useBackGestureML">false</bool>
+    <bool name="config_useBackGestureML">true</bool>
 </resources>
