@@ -176,7 +176,7 @@ BOARD_GOOGLE_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 BOARD_SUPER_PARTITION_ERROR_LIMIT := 8006926336
 
 # Reserve space for gapps install
--include vendor/fundamental/config/BoardConfigReservedSize.mk
+-include vendor/fundamental/common/config/BoardConfigReservedSize.mk
 
 # Build a separate system_dlkm partition
 BOARD_USES_SYSTEM_DLKMIMAGE := true
