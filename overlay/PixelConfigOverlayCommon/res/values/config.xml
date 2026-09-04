@@ -33,6 +33,12 @@
     -->
     <string name="config_defaultContentSuggestionsService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
+    <!-- The component name for the default smartspace service, which supplies
+         the lockscreen/home "at a glance" targets including the weather card.
+         Must be trusted, as the system binds to it.
+         Example: "com.android.smartspace/.SmartspaceService" -->
+    <string name="config_defaultSmartspaceService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSmartspaceService</string>
+
     <!-- Package name of the on-device intelligent processor for system UI
          features. Examples include the search functionality or the app
          predictor. -->
